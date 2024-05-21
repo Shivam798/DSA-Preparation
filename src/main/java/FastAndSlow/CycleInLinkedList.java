@@ -8,7 +8,8 @@ class ListNode {
     }
 }
 
-public class CycleInLinkedList {
+public class CycleInLinkedList
+{
     public static void main(String[] args) {
        ListNode head = new ListNode(1);
        head.next=new ListNode(2);
