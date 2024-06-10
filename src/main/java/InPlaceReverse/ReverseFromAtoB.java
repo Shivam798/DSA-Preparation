@@ -45,7 +45,7 @@ public class ReverseFromAtoB {
         return head;
     }
 
-    private static void printList(Node head){
+    public static void printList(Node head){
         while(head!=null){
             System.out.println(head.value);
             head=head.next;
