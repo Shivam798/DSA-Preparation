@@ -18,7 +18,10 @@ public class longest_sub_no_repeat {
             map.put(c,map.getOrDefault(c,0)+1);
             if(map.size() == end-start+1){
                 max=Math.max(max,end-start+1);
-            } else if (map.size() < end-start+1) {
+            } else if (map.size() < end-start+1)
+                //We always shrink the window when the window size is not matching with the map size .
+                //That's mean there are repeating characters in the window
+                {
                 while(map.size() < end-start+1){
                     Character s= str.charAt(start);
                     map.put(s,map.get(s)-1);

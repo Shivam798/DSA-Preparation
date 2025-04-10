@@ -10,7 +10,7 @@ public class permutation_string {
         System.out.println(helper(s1,s2));
     }
     public static boolean helper(String s1, String s2 ){
-        if (s1.length() > s2.length())
+        if (s2.length() > s1.length())
             return false;
 
         int[] s1Map = new int[26];

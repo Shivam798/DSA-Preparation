@@ -25,10 +25,11 @@ public class InserteIntervals {
         }
         //overlapping intervals
         while(i< intervals.length && intervals[i][0]<=end){
+            start = Math.min(start,intervals[i][0]);
             end= Math.max(end,intervals[i][1]);
             i++;
         }
-        merge.add(interval);
+        merge.add(new int[]{start,end});
         //
         while(i<intervals.length){
             merge.add(intervals[i]);

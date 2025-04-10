@@ -18,7 +18,7 @@ public class MergeIntervals {
         }
 
         Arrays.sort(intervals,(a,b)-> a[0]-b[0]);
-
+//        (1,3),(2,6),(8,10),(15,18)
         List<int[]> merge= new ArrayList<>();
         int[] currentInterval = intervals[0];
         merge.add(currentInterval);

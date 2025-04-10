@@ -9,7 +9,9 @@ public class FindMissingNumber {
         int res=0;
         int i =0;
         while(i<num.length){
+            //since the range start with 0 we are using this expression for currect index
             int correctIndex = num[i];
+            //if the range starts from 1 we use num[i]-1
             if(num[i]<num.length && num[correctIndex]!=num[i]){
                 int temp = num[i];
                 num[i]=num[correctIndex];
