@@ -2,7 +2,7 @@ package CyclicSort;
 
 public class FindMissingNumber {
     public static void main(String[] args) {
-        int[] num ={8, 3, 5, 2, 4, 6, 0, 1};
+        int[] num ={ 3, 2, 4, 0, 1};
         System.out.println(helper(num));
     }
     private static int helper(int [] num){

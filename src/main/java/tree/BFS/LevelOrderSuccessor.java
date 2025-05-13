@@ -1,6 +1,4 @@
-package BFS;
-
-import com.sun.source.tree.Tree;
+package tree.BFS;
 
 import java.util.*;
 

@@ -10,7 +10,7 @@ public class Longest_sub_k_distinct_word {
         System.out.println(helper(str, k));
     }
 
-    public static int helper(String str, int k) {
+    private static int helper(String str, int k) {
         int start = 0;
         int max = 0;
         Map<Character, Integer> map = new HashMap<>();

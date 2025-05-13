@@ -1,9 +1,6 @@
-package BFS;
-import com.sun.source.tree.Tree;
+package tree.BFS;
 
 import java.util.*;
-
-import static java.util.Collections.*;
 
 public class Zigzag {
     public static void main(String[] args) {

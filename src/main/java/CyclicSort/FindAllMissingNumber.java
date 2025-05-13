@@ -5,7 +5,7 @@ import java.util.*;
 public class FindAllMissingNumber {
     public static void main(String[] args) {
         int[] num = {2, 3, 1, 8, 2, 3, 5, 1};
-        int[] num2 = {2, 4, 1, 2};
+        int[] num2 = {2, 3, 1, 4};
 
         List<Integer> res = helper(num);
         System.out.println(res);

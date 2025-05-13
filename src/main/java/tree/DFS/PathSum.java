@@ -1,4 +1,4 @@
-package DFS;
+package tree.DFS;
 class TreeNode{
     int val;
     TreeNode left;

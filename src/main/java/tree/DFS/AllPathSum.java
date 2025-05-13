@@ -1,4 +1,4 @@
-package DFS;
+package tree.DFS;
 
 import java.util.*;
 

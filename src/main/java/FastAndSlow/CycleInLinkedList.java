@@ -21,6 +21,25 @@ public class CycleInLinkedList
        detectAndRemoveCycle(head);
 
     }
+
+    public static ListNode findCycleStart(ListNode head) {
+        ListNode slow= head;
+        ListNode fast= head;
+        while (fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(fast==slow){
+                slow= head;
+                while(slow!=fast){
+                    slow=slow.next;
+                    fast=fast.next;
+                }
+                break;
+            }
+        }
+        return slow;
+    }
+
     public static boolean hasCycle(ListNode head){
         boolean res =false;
         ListNode slow= head;
@@ -53,24 +72,6 @@ public class CycleInLinkedList
             }
         }
         return l != 0 ? l + 1 : 0;
-    }
-
-    public static ListNode findCycleStart(ListNode head) {
-        ListNode slow= head;
-        ListNode fast= head;
-        while (fast!=null && fast.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-            if(fast==slow){
-                slow= head;
-                while(slow!=fast){
-                    slow=slow.next;
-                    fast=fast.next;
-                }
-                break;
-            }
-        }
-        return slow;
     }
 
     public static void detectAndRemoveCycle(ListNode head) {

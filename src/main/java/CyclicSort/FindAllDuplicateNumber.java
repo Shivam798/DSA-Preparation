@@ -9,7 +9,7 @@ public class FindAllDuplicateNumber {
         int[] num3 = {3, 4, 4, 5, 5};
         int[] num4 = {5, 4, 7, 2, 3, 5, 3};
 
-        System.out.println(helper(num4));
+        System.out.println(helper(num));
     }
     private static List<Integer> helper(int[] num){
         int i=0;

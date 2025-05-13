@@ -6,7 +6,7 @@ import java.util.*;
 public class longest_sub_no_repeat {
     public static void main(String[] args) {
         String str = "abcabcbb";
-        System.out.println(helper2(str));
+        System.out.println(helper3(str));
     }
 
     private static int helper(String str){
@@ -48,5 +48,19 @@ public class longest_sub_no_repeat {
             max=Math.max(max,end-start+1);
         }
         return max;
+    }
+    private static int helper3(String s){
+        int start =0;
+        int len=0;
+        Map<Character,Integer> map = new HashMap<>();
+        for(int end =0;end<s.length();end++){
+            Character endChar = s.charAt(end);
+            if(map.containsKey(endChar)){
+                start = Math.max(map.get(endChar)+1,start);
+            }
+            map.put(endChar,end);
+            len = Math.max(len,end-start+1);
+        }
+        return  len;
     }
 }

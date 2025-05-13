@@ -1,4 +1,4 @@
-package BFS;
+package tree.BFS;
 //Whole different concept than other BFS questions.
 class Nodep{
     int val;
